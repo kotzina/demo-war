@@ -29,6 +29,11 @@ public class DemoServlet extends HttpServlet {
 		String join = map.entrySet().stream().map(m -> m.getKey() + "=" + String.join(",", m.getValue()))
 				.collect(Collectors.joining("\n"));
 
+
+builder.append("<p>");
+builder.append("Version 1:");
+builder.append("</p>");
+
 		builder.append("<p>");
 		builder.append("Parameters: " + join);
 
